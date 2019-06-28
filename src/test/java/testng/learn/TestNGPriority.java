@@ -8,4 +8,8 @@ public class TestNGPriority {
     public void method1(){
 
     }
+    
+    @Test
+    public void method2(){
+    }
 }
