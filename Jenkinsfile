@@ -12,7 +12,7 @@ pipeline {
         stage('Testing Stage'){
                     steps{
                     withMaven(maven : 'maven_3.3.9'){
-                     sh 'mvn test'
+                     sh 'mvn test -DsuiteXmlFile=/home/jitendra/IdeaProjects/learnautomation/testng.xml'
                     }
                     }
         }
