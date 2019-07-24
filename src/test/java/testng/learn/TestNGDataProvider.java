@@ -7,7 +7,7 @@ public class TestNGDataProvider {
 
     @DataProvider(name = "data")
     public Object[][] dataProvider(){
-        return new Object[][] {{"jitu"},{"jiten"}};
+        return new Object[][] {{"jitu","kumar"},{"jiten","kumar"}};
     }
 
     @Test(dataProvider = "data")

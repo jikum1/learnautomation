@@ -16,12 +16,12 @@ public class TestNGListernersDemo {
     @Test
     public void method2(){
         System.out.println("Inside method 2");
-        Assert.fail();
+        //Assert.fail();
     }
 
     @Test
     public void method3(){
         System.out.println("Inside method 3");
-        throw new SkipException("Skipped method3");
+        //throw new SkipException("Skipped method3");
     }
 }
