@@ -1,22 +1,20 @@
+
 package testng.learn;
 
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class TestNGPriority {
+//@Ignore
+public class IgnoreAnnotations {
 
     @Test
     public void method1(){
         System.out.println("Inside method 1");
     }
 
-    @Test(priority = 0)
+    //@Ignore
+    @Test
     public void method2(){
         System.out.println("Inside method 2");
-    }
-
-
-    @Test(priority = 1)
-    public void method3(){
-        System.out.println("Inside method 3");
     }
 }

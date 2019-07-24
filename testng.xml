@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "SuiteName">
+    <listeners>
+        <listener class-name="testng.learn.TestNGListeners"></listener>
+    </listeners>
+    <test name = "TestName">
+<!--        <groups>
+            <run>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+        <parameter name="username" value="jk"></parameter>
+        <parameter name="password" value="test12334"></parameter>-->
+        <classes>
+            <class name="testng.learn.TestNGListernersDemo"></class>
+
+        </classes>
+    </test>
+</suite>
