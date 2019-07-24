@@ -7,6 +7,8 @@ public class TestNGPriority {
     @Test
     public void method1(){
         System.out.println("**********Inside method 1**********");
+        String str = System.getenv("jenkinsVariable");
+        System.out.println("Jenkins variable is " + str);
     }
 
     @Test(priority = 0)
