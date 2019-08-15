@@ -13,7 +13,7 @@ pipeline {
                     steps{
                     withMaven(maven : 'maven_3_6_1'){
                      //bat 'mvn test -DsuiteXmlFile=C:/Users/jitendrk/git/learnautomation/testng.xml'
-                     bat 'mvn test';
+                     bat 'mvn test'
                     }
                     }
         }
