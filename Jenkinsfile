@@ -20,6 +20,10 @@ pipeline {
 
         stage('Deploy Stage'){
                             steps{
+                            script {
+                                     timeout(time: 10, unit: 'MINUTES') {
+                                     input(id: "Deploy to Nexus", message: "Deploy ${params.project_name}?", ok: 'Deploy')
+                             }
                             withMaven(maven : 'maven_3_6_1'){
                               bat 'mvn deploy'
                             }
