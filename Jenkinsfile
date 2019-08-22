@@ -22,7 +22,7 @@ pipeline {
                             steps{
                             script {
                                      timeout(time: 10, unit: 'MINUTES') {
-                                     input(id: "Deploy to Nexus", message: "Deploy ${params.project_name}?", ok: 'Deploy')
+                                     input(id: "Deploy to Nexus", message: "Deploy Snapshot to Nexus", ok: 'Deploy')
                                      }
                             }
                             withMaven(maven : 'maven_3_6_1'){
