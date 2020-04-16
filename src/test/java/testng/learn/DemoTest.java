@@ -2,20 +2,20 @@ package testng.learn;
 
 import org.testng.annotations.Test;
 
-public class TestNGPriority {
+public class DemoTest {
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void method1(){
-
+            System.out.println("Inside method 1");
     }
 
-    @Test
+    @Test(groups = {"Regression"})
     public void method2(){
         System.out.println("Inside method 2");
     }
 
 
-    @Test
+    @Test(groups = {"Regression"})
     public void method3(){
         System.out.println("Inside method 3");
     }
