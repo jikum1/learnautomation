@@ -17,7 +17,7 @@ public class DemoTest {
 
     @Test(groups = {"Regression"})
     public void method3(){
-        System.out.println("Inside method 3");
+        System.out.println("****Inside method 3**");
     }
 
 }
