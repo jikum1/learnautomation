@@ -19,4 +19,5 @@ public class DemoTest {
     public void method3(){
         System.out.println("Inside method 3");
     }
+
 }
