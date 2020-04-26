@@ -23,6 +23,8 @@ public class DemoTest {
         System.out.println("****Inside method 3**");
         String testRealm = System.getenv("getRealm");
         System.out.println("*****Environment Variables*****" + testRealm);
+        String property = System.getProperty("systemTest");
+        System.out.println("*****System Property******" +  property);
     }
 
 }
