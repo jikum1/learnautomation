@@ -2,6 +2,9 @@ package testng.learn;
 
 import org.testng.annotations.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DemoTest {
 
     @Test(groups = {"Smoke"})
@@ -18,6 +21,8 @@ public class DemoTest {
     @Test(groups = {"Regression"})
     public void method3(){
         System.out.println("****Inside method 3**");
+        String testRealm = System.getenv("getRealm");
+        System.out.println("*****Environment Variables*****" + testRealm);
     }
 
 }
