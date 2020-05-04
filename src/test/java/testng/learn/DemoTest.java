@@ -1,5 +1,6 @@
 package testng.learn;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -15,9 +16,11 @@ public class DemoTest {
     @Test(groups = {"Regression"})
     public void method2(){
         System.out.println("Inside method 2");
+        Assert.fail("***Failed****");
     }
 
 
+    /*Add here javadoc.*/
     @Test(groups = {"Regression"})
     public void method3(){
         System.out.println("****Inside method 3**");
@@ -25,10 +28,7 @@ public class DemoTest {
         System.out.println("*****Environment Variables*****" + testRealm);
         String property = System.getProperty("getTest");
         System.out.println("*****System Property******" +  property);
-
-
-
-
+        Assert.fail("***Failed****");
     }
 
 }
